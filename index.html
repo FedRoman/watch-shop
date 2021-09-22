@@ -5,13 +5,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/index.css">
     <title>Watch-shop</title>
 </head>
 
 <body>
     <header>
-        <nav>
-            <h1 class="name-of-company">Watch-shop</h1>
+        <nav class="header-nav">
+            <h1 class="name-of-company">Watch-shop<sup>тм</sup></h1>
             <div class="schedule">
                 <p>Пн-ПТ 9.00-18.00 Сб 10.00-15.00</p>
             </div>
@@ -19,38 +20,47 @@
             <a href="#">Напишіть нам</a>
             <a href="#">Контакти</a>
             <a href="#">Доставка і оплата</a>
+
             <form>
-                <select>
+                <select class="select-language">
                     <option>ukr</option>
                     <option>eng</option>
                 </select>
             </form>
         </nav>
         <hr>
-        <div class="logo-of-company">
-            <a href="#">Watch-shop</a>
-            <img src="img/watch-icon.jpg" alt="watch-icon">
-        </div>
-        <form class="search">
-            <input type="search" placeholder="пошук по сайту">
-            <input type="submit" value="знайти">
-        </form>
-        <ul class="number-of-phone">
-            <li>0678002020</li>
-            <li>0958002020</li>
-            <li>0638002020</li>
-        </ul>
-        <div class="cart">
-            <img src="img/cart.png" alt="pic-of-cart" style="width: 50px; height: 50px;">
-            <form>
-                <select>
-                    <option>Кошик</option>
-
-                </select>
+        <div class="header-middle-part">
+          <!---  <div class="logo-of-company">
+                <a href="#">
+                    <h2>watch</h2>
+                    <img src="img/watch-icon.jpg" alt="watch-icon">
+                    <h2>shop</h2>
+                </a>
+            </div>
+            -->
+            <img src="img/watch-logo.png" alt="logo of company">
+            <form class="search">
+                <input type="search" id="field-of-search" placeholder="пошук по сайту">
+                <input type="submit" value="знайти">
             </form>
+            <ul class="number-of-phone">
+                <li>0678002020</li>
+                <li>0958002020</li>
+                <li>0638002020</li>
+            </ul>
+            <img src="img/love.png" alt="icon_heart">
+            <div class="cart">
+                <img src="img/cart.png" alt="pic-of-cart" style="width: 50px; height: 50px;">
+                <form>
+                    <select>
+                        <option>Кошик</option>
+
+                    </select>
+                </form>
+            </div>
         </div>
     </header>
-
+    <!-- 
     <nav class="nav-of-brands">
         <a href="#hidden-of-brands">
             <ul id="hidden-of-brands">
@@ -277,7 +287,7 @@
             </label>
             <input type="submit">
         </form>
-    </footer>
+    </footer>-->
 </body>
 
 </html>
