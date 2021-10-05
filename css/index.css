@@ -76,26 +76,25 @@ header .cart img {
 }
 /*nav-of-brands*/
 
-.nav-of-brands ul {
+.type-of-watches {
   list-style: none;
 }
-.nav-of-brands > ul {
+.type-of-watches {
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  background: red;
+  background: black;
   height: 70px;
   align-items: center;
   padding-left: 0;
 }
-
-.nav-of-brands li {
+.type-of-watches li {
   position: relative;
 }
 
-.nav-of-brands > ul li a {
+.type-of-watches__variant {
   display: block;
-  background: gold;
+  background: white;
   padding: 10px 20px;
   font-size: 10px;
   color: black;
@@ -105,23 +104,51 @@ header .cart img {
   border: 1px solid black;
   border-radius: 10px;
 }
-.nav-of-brands li a:hover {
-  background: chartreuse;
-  color: gold;
+.type-of-watches__variant:hover {
+  background: grey;
+  color: white;
   box-shadow: 1px 5px 10px -10px black;
   transition: all 0.3s ease;
+  border: 1px solid whitesmoke;
 }
 /*inside-menu*/
-
 .nav-of-brands li ul {
   position: absolute;
-  min-width: 100px;
+  min-width: 106px;
   padding: 0;
+  display: none;
 }
 .nav-of-brands li > ul li {
-  border: 1px solid black;
+  border: 1px solid rgb(14, 13, 13);
+  list-style: none;
+  background: gray;
 }
+
+.nav-of-brands li:hover > ul {
+  display: block;
+}
+/*.type-of-watches__brands li :hover {
+  background: white;
 .nav-of-brands li > ul li a {
-  padding: 10px;
+  padding: 5px;
   text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+  
+}*/
+.type-of-watches__brands a {
+  text-decoration: none;
+  color: white;
+}
+
+.type-of-watches__items:hover {
+  color: black;
+  cursor: pointer;
+  background-color: white;
+}
+/*box-for-images*/
+.box-for-images {
+  display: grid;
+  grid-template-columns: auto;
 }
