@@ -84,7 +84,7 @@ header .cart img {
   justify-content: space-around;
   flex-wrap: wrap;
   background: black;
-  height: 70px;
+  min-height: 70px;
   align-items: center;
   padding-left: 0;
 }
@@ -111,6 +111,7 @@ header .cart img {
   transition: all 0.3s ease;
   border: 1px solid whitesmoke;
 }
+
 /*inside-menu*/
 .nav-of-brands li ul {
   position: absolute;
@@ -127,28 +128,123 @@ header .cart img {
 .nav-of-brands li:hover > ul {
   display: block;
 }
-/*.type-of-watches__brands li :hover {
-  background: white;
-.nav-of-brands li > ul li a {
-  padding: 5px;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: white;
-}
-  
-}*/
+
 .type-of-watches__brands a {
   text-decoration: none;
   color: white;
 }
-
-.type-of-watches__items:hover {
-  color: black;
-  cursor: pointer;
+.type-of-watche-list:hover {
   background-color: white;
 }
-/*box-for-images*/
+.type-of-watches__items:hover {
+  color: black;
+}
+/*box-for-image*/
 .box-for-images {
-  display: grid;
-  grid-template-columns: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.watch-for-men {
+  background-image: url(../img/watch-for-men.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.watch-for-women {
+  background-image: url(../img/watch-for-woman.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.watch-for-child {
+  background-image: url(../img/child.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.watch-for-floor {
+  background-image: url(../img/watch-on-the-floor.jpg);
+  background-position: center;
+  background-size: cover;
+  min-height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.watch-for-men h2,
+.watch-for-women h2,
+.watch-for-child h2,
+.watch-for-floor h2 {
+  font-size: 2rem;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.watch-for-men p,
+.watch-for-women p,
+.watch-for-child p,
+.watch-for-floor h2 {
+  font-size: 1rem;
+  color: white;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.check-my-opinions {
+  display: none;
+}
+@media (max-width: 800px) {
+  .check-my-opinions {
+    display: block;
+  }
+}
+@media (max-width: 800px) {
+  .box-for-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
+@media (max-width: 500px) {
+  .box-for-images {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
+.list-of-the-top {
+  display: flex;
+  justify-content: space-around;
+  background: rgb(192, 194, 199);
+}
+
+.list-of-the-top__special {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  background: cornsilk;
+}
+.list-of-the-top__special h2,
+.list-of-the-top__special p {
+  padding: 5px;
 }
