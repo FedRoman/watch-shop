@@ -3,9 +3,7 @@
   box-sizing: border-box;
 }
 h1,
-h2,
-h3,
-p {
+h3 {
   margin: 0;
   padding: 0;
 }
@@ -151,7 +149,7 @@ header .cart img {
   min-height: 250px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
 }
 .watch-for-women {
@@ -161,7 +159,7 @@ header .cart img {
   min-height: 250px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
 }
 .watch-for-child {
@@ -170,66 +168,49 @@ header .cart img {
   background-size: cover;
   min-height: 250px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
 }
 .watch-for-floor {
-  background-image: url(../img/watch-on-the-floor.jpg);
+  background-image: url(../img/watch-on-the-table.jpg);
   background-position: center;
   background-size: cover;
   min-height: 250px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-end;
   flex-direction: column;
 }
 .watch-for-men h2,
 .watch-for-women h2,
 .watch-for-child h2,
 .watch-for-floor h2 {
+  margin: 0 auto;
   font-size: 2rem;
   color: white;
   padding: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
 }
 .watch-for-men p,
 .watch-for-women p,
 .watch-for-child p,
-.watch-for-floor h2 {
+.watch-for-floor p {
+  margin: 0 auto;
   font-size: 1rem;
   color: white;
   padding: 10px;
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
 }
 .check-my-opinions {
   display: none;
 }
-@media (max-width: 800px) {
-  .check-my-opinions {
-    display: block;
-  }
-}
-@media (max-width: 800px) {
-  .box-for-images {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-  }
-}
-@media (max-width: 500px) {
-  .box-for-images {
-    display: grid;
-    grid-template-columns: 1fr;
-    column-gap: 10px;
-    row-gap: 10px;
-  }
-}
+
+/*main-page*/
 .list-of-the-top {
   display: flex;
   justify-content: space-around;
@@ -247,4 +228,49 @@ header .cart img {
 .list-of-the-top__special h2,
 .list-of-the-top__special p {
   padding: 5px;
+}
+
+@media (max-width: 800px) {
+  .box-for-images,
+  .list-of-the-top {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+  .box-for-images__type h2,
+  .box-for-images__type p {
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .check-my-opinions {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .box-for-images,
+  .list-of-the-top {
+    display: grid;
+    grid-template-columns: 1fr;
+    column-gap: 10px;
+    row-gap: 10px;
+  }
+}
+/*origin-of-watch-in-ukraine*/
+.origin-of-watch-in-ukraine {
+  display: flex;
+  justify-content: space-around;
+}
+.origin-of-watch-in-ukraine li {
+  list-style: none;
+  padding: 5px;
+  border: 1px solid black;
+}
+.origin-of-watch-in-ukraine h2 {
+  margin: 0 auto;
 }
