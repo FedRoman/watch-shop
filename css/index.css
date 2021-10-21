@@ -265,6 +265,7 @@ header .cart img {
 .origin-of-watch-in-ukraine {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
 }
 .origin-of-watch-in-ukraine li {
   list-style: none;
@@ -273,4 +274,27 @@ header .cart img {
 }
 .origin-of-watch-in-ukraine h2 {
   margin: 0 auto;
+}
+.list-of-watches-by-alphabet {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+/*article class="how-choice-wirstwatch"*/
+
+@media (max-width: 800px) {
+  .for-small-version {
+    display: none;
+  }
+}
+@media (min-width: 800px) {
+  .hidden-block {
+    display: none;
+  }
+}
+@media (max-width: 800px) {
+  .hidden-block option {
+    display: block;
+  }
 }
