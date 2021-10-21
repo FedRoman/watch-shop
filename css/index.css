@@ -294,7 +294,16 @@ header .cart img {
   }
 }
 @media (max-width: 800px) {
-  .hidden-block option {
+  .hidden-block {
     display: block;
+    border: 2px solid black;
+  }
+  .hidden-block h2 {
+    font-size: 1rem;
+    padding-left: 10px;
+    display: inline-block;
+  }
+  .hidden-block p {
+    padding-left: 20px;
   }
 }
