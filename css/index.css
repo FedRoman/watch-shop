@@ -288,6 +288,7 @@ header .cart img {
     display: none;
   }
 }
+/*usefull advice*/
 @media (min-width: 800px) {
   .hidden-block {
     display: none;
@@ -297,6 +298,7 @@ header .cart img {
   .hidden-block {
     display: block;
     border: 2px solid black;
+    margin-top: 5px;
   }
   .hidden-block h2 {
     font-size: 1rem;
@@ -306,4 +308,26 @@ header .cart img {
   .hidden-block p {
     padding-left: 20px;
   }
+}
+/*footer*/
+
+.first-row-of-contact {
+  display: flex;
+  justify-content: space-around;
+}
+.number-of-phone {
+  list-style: none;
+}
+.number-of-phone li {
+  border: 1px solid black;
+  background: rgb(232, 235, 238);
+  padding: 5px 20px;
+}
+.contact-block-common-property {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contact-block-common-property a {
+  padding-left: 10px;
 }
